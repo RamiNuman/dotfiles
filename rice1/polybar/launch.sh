@@ -10,9 +10,9 @@ killall -q polybar
 echo "---" | tee -a /tmp/polybar1.log /tmp/polybar2.log
 polybar myworkspaces 2>&1 | tee -a /tmp/polybar1.log & disown
 polybar mysystem 2>&1 | tee -a /tmp/polybar2.log & disown
-polybar myapps 2>&1 | tee -a /tmp/polybar2.log & disown
-polybar mymenu 2>&1 | tee -a /tmp/polybar2.log & disown
+#polybar myapps 2>&1 | tee -a /tmp/polybar2.log & disown
+#polybar mymenu 2>&1 | tee -a /tmp/polybar2.log & disown
 polybar mymusic 2>&1 | tee -a /tmp/polybar2.log & disown
-polybar date 2>&1 | tee -a /tmp/polybar2.log & disown
+#polybar date 2>&1 | tee -a /tmp/polybar2.log & disown
 
 echo "Bars launched..."

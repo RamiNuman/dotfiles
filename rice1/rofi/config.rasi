@@ -4,16 +4,19 @@ configuration {
 	drun-display-format: "{icon} {name}";
 	modi: "window,run,drun";
 	show-icons: true;
+	run,drun {
+		fallback-icon: "/home/rami/library/pictures/icon.png";
+	}
 }
 
 @theme "/dev/null"
 
 * {
-	bg: #282A2E90;
-	bg-alt: #373B4190;
+	bg: #082032;
+	bg-alt: #2C394B;
 
-	fg: #F0C674;
-	fg-alt: #707880;
+	fg: #FF4C29;
+	fg-alt: #334756;
 
 	background-color: @bg;
 
@@ -30,6 +33,7 @@ window {
 element {
 	padding: 12;
 	text-color: @fg-alt;
+	background-color: @bg;
 }
 
 element selected {
